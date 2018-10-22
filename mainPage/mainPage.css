@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Futura PT Light';
+    src: url('FuturaPT-Light.eot');
+    src: url('FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+    url('FuturaPT-Light.woff') format('woff'),
+    url('FuturaPT-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+h1{
+    font-family: "Futura PT Light";
+    font-size: 100px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 3;
+    color:#c10101;
+    letter-spacing: 30px;
+    font-weight: lighter;
+}
+.slides{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height:969px;
+}
+.slide,
+.noise{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 5s;
+}
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+.slide:nth-of-type(1){
+    background: url("derevia_pustynia_vetki_129105_1920x1080.jpg");
+}
+.slide:nth-of-type(2){
+    background: url("gory_reka_sneg_zima_93245_1920x1080.jpg");
+}
+.slide:nth-of-type(3){
+    background: url("mlechnyy_put_avgust_nebo_eli_derevya_noch_45544_1920x1080.jpg");
+}
+.slide:nth-of-type(4){
+    background: url("palatka_zvezdnoe_nebo_noch_turizm_119523_1920x1080.jpg");
+}
+.slide:nth-of-type(5){
+    background: url("palmy_derevia_vetki_129111_1920x1080.jpg");
+}
+.noise{
+    opacity: 1;
+    background: url("television-rgb-color-static-noise-tv-glitch-and-broadcast-failure_egn6653kl__F0000.png");
+}
