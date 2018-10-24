@@ -15,25 +15,21 @@ li{
     list-style-type: none;
 }
 .article{
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1{
+.portfolio-font{
     font-family: "Futura PT Light";
     font-size: 100px;
-    position: absolute;
-    z-index: 3;
+    z-index: 4;
     color:#c10101;
     letter-spacing: 30px;
     font-weight: lighter;
-}
-div{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    text-decoration: none;
 }
 .slides{
     position: absolute;
@@ -44,8 +40,7 @@ div{
     width: 100%;
     height: 100%;
 }
-.slide,
-.noise{
+.slide{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -57,16 +52,18 @@ div{
     visibility: hidden;
     object-position: 50% 50%;
     object-fit: cover;
-
-
-
 }
 .showing{
     opacity: 1;
     z-index: 2;
     visibility: visible;
 }
-.noise{
-    opacity: 1;
-    background: url("television-rgb-color-static-noise-tv-glitch-and-broadcast-failure_egn6653kl__F0000.png");
+.social-icons{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    z-index:3;
+    justify-content: center;
+    align-items: flex-end;
 }
